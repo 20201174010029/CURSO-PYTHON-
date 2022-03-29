@@ -208,3 +208,63 @@ print('a posição que o nome está é',nome.find('a')+1)
 print('seu nome apareceu por ultimo na posição',nome.rfind('nome')+1)
 
 
+#028
+from random import randint
+from time import sleep
+comp = randint (0, 5)
+print('vou pensar em um numero de 0 a 5 adivinhe!')
+jogador =int(input('em que numero eu pensei ? '))
+print('calma processando...')
+sleep(3)
+if jogador == comp:
+ print('parabens você ganhou !')
+else:
+ print('vc perdeu hehehe!')
+
+#029
+
+velo = int(input('Velocidade(Km/h): '))
+print(f'MULTADO! Você excedeu o limite de 80Km/h e agora deve pagar uma multa de R${(velo - 80)*7:.2f}!' if velo > 80 else 'Dentro dos limites de velocidade!')
+print('Dirija com cuidado!')
+
+#030
+
+número = int(input('me diga um número qualquer: '))
+if número % 2 == 0:
+    print(número,'é par.')
+else:
+    print(número,'é impar.')
+
+#031
+
+km = float(input('Qual a distância em (Km) você deseja percorrer? '))
+if km <= 200:
+    print('Sua passagem vai custar {} reais. '.format(km * 0.5))
+else:
+    print('Sua passagem vai custar {} reais. '.format(km * 0.45))
+
+#032
+
+import calendar
+ano = int(input('Digite o ano: '))
+ano6 = calendar.isleap(ano)
+if ano6 is True:
+    print(f'O ano de {ano} é bissexto')
+else:
+    print(f'O ano de {ano} não é bissexto')
+
+#033
+
+primeiro = int(input('Digite o primeiro número: 3'))
+segundo = int(input('Digite o segundo número:'))
+terceiro = int(input('Digite o terceiro número:'))
+numeros = [primeiro, segundo, terceiro]
+
+print('O maior valor digitado foi {}'.format(max(numeros)))
+print('O menor valor digitado foi {}'.format(min(numeros)))
+
+
+#034
+
+
+
