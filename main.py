@@ -70,3 +70,65 @@ dolar = real/1.00
 print('com {} R$ você pode comprar {} US$'.format(real, dolar))
 
 #011
+largura = float(input('Digite a largura da parede: '))
+altura = float(input('Digite a altura da parede: '))
+print(f'Sua parede tem a dimensão de {largura}x{altura} e sua área é de {largura*altura}m².')
+print(f'Para pintar essa parede, você precisará de {largura*(altura / 2)}L de tinta.')
+
+print('oizin!')
+
+#012
+
+p = float(input('Qual o preço do produto? '))
+x = int(input('De quanto será o desconto? '))
+d = (p/100) * x
+v = p-d
+print('O produto que custava R${:.2f}, com {}% de desconto vai custar R${:.2f}'.format(p, x, v))
+
+#013
+p = float(input('Qual é seu salario? '))
+x = int(input('De quanto será o aumento? '))
+a = (p/100) * x
+v = p+a
+print('O seu salario que era de R${:.2f},agora com aumento de  {}%  vai fica R${:.2f}'.format(p, x, v))
+
+#014
+c=float(input('Informe a temperatura em °C: '))
+f=(c*1.8+32)
+print('{}°C é equivalente a {}°F'.format(c,f))
+
+#015
+
+d = int(input('Por quantos dias você alugou o carro? '))
+km = float(input('Quantos quilômetros você rodou com ele? '))
+a = d * 60 + km * 0.15
+print(f'Você deve R${a:.2f} de aluguel')
+
+#016
+num = float(input('Digite um valor:'))
+print('O valor {} tem sua parte inteira {:.0f}'.format(num, num))
+print('obrigadu!')
+
+#017
+from math import sqrt
+print('Calculando a Hipotenusa')
+co = float(input('Insira o valor do cateto oposto: '))
+ca = float(input('Insira o valor do cateto adjacente: '))
+
+hi = (co ** 2) + (ca ** 2)
+
+hi = sqrt(hi)
+print('A hipotenusa desse triângulo é:{:.2f}'.format(hi))
+
+#018
+
+import math
+an = float(input('digite o angulo q deseja ? '))
+r = math.radians(an)
+s = math.sin(r)
+c = math.cos(r)
+t = math.tan(r)
+print('se o angulo for {} \n o seno sera {:.3f} \n o coseno sera{:.3f} \n e a trangente sera {:.3f}'.format(an, s, c, t))
+print('valeu !')
+
+#019
