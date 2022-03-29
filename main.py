@@ -132,3 +132,79 @@ print('se o angulo for {} \n o seno sera {:.3f} \n o coseno sera{:.3f} \n e a tr
 print('valeu !')
 
 #019
+
+from random import choice
+a = str(input("1°aluno Nome: "))
+b = str(input("2° aluno Nome: "))
+c = str(input("3° aluno Nome: "))
+d = str(input("4° aluno Nome: "))
+escolhido = (a, b, c, d)
+print("A pessoa escolhida foi {}".format(choice(escolhido)))
+print('ops vc não ser deu bem hehehe!')
+
+#020
+
+from random import shuffle
+p = input('Digite o nome do 1° aluno: ')
+s = input('Digite o nome do 2° aluno: ')
+t = input('Digite o nome do 3° aluno: ')
+q = input('Digite o nome do 4° aluno: ')
+lista = [p, s, t, q]
+emb = shuffle(lista)
+print('a ordem foi {}'.format(lista))
+print('valeu!')
+#021
+from playsound import playsound
+playsound('arquivo.mp3')
+
+#022
+
+nome = input('Ingresse seu nome completo : ')
+print('Seu nome completo é : {}'.format(nome)) 
+print('Seu nome em maiúsculas : {}'.format(nome.upper()))
+print('Seu nome em minúsculas : {}'.format(nome.lower()))
+# Forma 1
+separado = nome.split() # lo separo
+print(separado) # lo muestro separado
+print(''.join(separado)) #lo muestro unido (sem espacios)
+print('O cumprimento do nome sem espacios é: {}'.format(len(''.join(separado))))
+# Forma 2
+print('Cumprimento {}'.format(len(nome.replace(' ',''))))
+
+# Quantas letras tem o primeiro nome
+print('Quantidade letras o 1er nome é: {}'.format(len(separado[0])))
+
+#023
+
+n = int(input('Digite um número entre 0 e 9999: '))
+n2 = str(int(10000 + n))
+print('O número {} possui, {} milhares.'.format(n, n2[1]))
+print('O número {} possui, {} centenas. '.format(n, n2[2]))
+print('O número {} possui, {} dezenas. '.format(n, n2[3]))
+print('O número {} possui, {} unidades.'.format(n, n2[4]))
+
+#024
+
+nome=str(input("Introduza o nome da cidade: ")).strip()
+print("santo" in nome.lower())
+
+#025
+
+nome=str(input("diga seu nome completo: ")).strip()
+print("silva" in nome.lower())
+print('valeu!')
+
+#026
+
+frase = str(input('digite uma frase: ')).strip().lower()
+print('a letra a (sem acento) aparece',frase.count('a'),'vezes na frase.')
+print('a posição que o a está é',frase.find('a')+1)
+print('a letra a apareceu por ultimo na posição',frase.rfind('a')+1)
+
+#027
+nome = str(input('digite seu nome: ')).strip().lower()
+print('seu nome (sem acento) aparece',nome.count('nome'),'vezes na frase.')
+print('a posição que o nome está é',nome.find('a')+1)
+print('seu nome apareceu por ultimo na posição',nome.rfind('nome')+1)
+
+
