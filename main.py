@@ -266,5 +266,23 @@ print('O menor valor digitado foi {}'.format(min(numeros)))
 
 #034
 
+salario = float(input('Informe o salário do funcionário: '))
+if salario <=1250:
+    print('Seu salário terá um aumento de 15%!!')
+    print(f'O valor do seu salario era {salario} e agora será de R${(salario*0.15)+salario:.2f}')
+else:
+    print('Seu salário terá um aumento de 10%!!')
+    print(f'O valor do seu salario era {salario} e agora será de R$ {(salario*0.10)+salario:.2f}')
 
+
+#035
+
+a = float(input('Coloque o valor de um lado: '))
+b = float(input('Coloque o valor de outro lado: '))
+c = float(input('Coloque o valor de outro lado: '))
+
+if abs( b - c) < a <  b + c and abs( a - c ) < b < a + c and abs( a - b ) < c < a + b:
+    print('Os lados {}, {} e {} podem formar triângulo.'.format(a,b,c))
+else:
+    print('Os lados {}, {} e {} não podem formar triângulo.'.format(a,b,c))
 
